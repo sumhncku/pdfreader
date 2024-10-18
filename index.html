@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>士林學書櫃 - 文學閱覽</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #deb887; /* 木頭色背景 */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4b3f2f;
+        }
+        .bookshelf {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* 書籍之間的間隔 */
+        }
+        .book {
+            background-color: #fff;
+            border: 2px solid #8b4513; /* 深棕色邊框 */
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .book img {
+            width: 120px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+        .book h3 {
+            font-size: 18px;
+            color: #4b3f2f;
+        }
+        .book a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .book a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>士林學書櫃</h1>
+    <div class="bookshelf">
+        <div class="book">
+            <img src="images/Exploring_Shilin_with_Chiang1.jpg" alt="Book 1">
+            <h3>跟著老蔣遊士林</h3>
+            <a href="Exploring_Shilin_with_Chiang_V1.pdf" target="_blank">閱讀 PDF</a>
+        </div>
+        <div class="book">
+            <img src="images/ReligiousOfficiant1.png" alt="Book 2">
+            <h3>臺灣傳統宗教的執事人員與法事祭儀概觀</h3>
+            <a href="ReligiousOfficiant.pdf" target="_blank">閱讀 PDF</a>
+        </div>
+        <div class="book">
+            <img src="images/Celebrating_Ghost_Festival.jpg" alt="Book 3">
+            <h3>2020芝山巖慶讚中元 　(英文版)</h3>
+            <a href="Celebrating_Ghost_Festival.pdf" target="_blank">閱讀 PDF</a>
+        </div>
+        <div class="book">
+            <img src="images/Celebrating_Ghost_Festival_Chinese.jpg" alt="Book 3">
+            <h3>2020芝山巖慶讚中元 　(中文版)</h3>
+            <a href="Celebrating_Ghost_Festival_CHinese.pdf" target="_blank">閱讀 PDF</a>
+        </div>
+        <!-- 可以根據需求添加更多書籍 -->
+    </div>
+</body>
+</html>
