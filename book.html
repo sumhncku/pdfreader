@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖書頁面</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #deb887;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(20% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .item img:hover {
+            transform: scale(1.05);
+        }
+
+        .item h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .item a:hover {
+            color: #0056b3;
+        }
+
+        a.back-home {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #a88bf3;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.back-home:hover {
+            background-color: #5f00b3;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>圖書列表</h1>
+    <div class="container">
+        <div class="item book-item">
+            <h3>跟著老蔣遊士林</h3>
+            <a href="Exploring_Shilin_with_Chiang_V1.pdf" target="_blank">
+                <img src="images/Exploring_Shilin_with_Chiang1.jpg" alt="書籍">
+            </a>
+            <p><a href="Exploring_Shilin_with_Chiang_V1.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>臺灣傳統宗教的執事人員與法事祭儀概觀</h3>
+            <a href="ReligiousOfficiant.pdf" target="_blank">
+                <img src="images/ReligiousOfficiant1.png" alt="書籍">
+            </a>
+            <p><a href="ReligiousOfficiant.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>2020芝山巖慶讚中元<br>(英文版)</h3>
+            <a href="Celebrating_Ghost_Festival.pdf" target="_blank">
+                <img src="images/Celebrating_Ghost_Festival.jpg" alt="書籍">
+            </a>
+            <p><a href="Celebrating_Ghost_Festival.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>2020芝山巖慶讚中元<br>(中文版)</h3>
+            <a href="Celebrating_Ghost_Festival_CHinese.pdf" target="_blank">
+                <img src="images/Celebrating_Ghost_Festival_Chinese.jpg" alt="書籍">
+            </a>
+            <p><a href="Celebrating_Ghost_Festival_CHinese.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>剪黏是什麼<br>走到廟前抬頭看<br>(英文版)</h3>
+            <a href="WhatisPasteDecorationArt.pdf" target="_blank">
+                <img src="images/WhatisPasteDecorationArt.jpg" alt="書籍">
+            </a>
+            <p><a href="WhatisPasteDecorationArt.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>剪黏是什麼<br>走到廟前抬頭看<br>(中文版)</h3>
+            <a href="WhatisPasteDecorationArt_Chinese.pdf" target="_blank">
+                <img src="images/WhatisPasteDecorationArt_Chinese.jpg" alt="書籍">
+            </a>
+            <p><a href="WhatisPasteDecorationArt_Chinese.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>走讀士林<br>福德洋圳參訪手冊<br>(英文版)</h3>
+            <a href="WalkingandReadingShilin.pdf" target="_blank">
+                <img src="images/WalkingandReadingShilin.jpg" alt="書籍">
+            </a>
+            <p><a href="WalkingandReadingShilin.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>平安就是符<br>認識寺廟的平安符</h3>
+            <a href="PeaceTalisman.pdf" target="_blank">
+                <img src="images/PeaceTalisman.jpg" alt="書籍">
+            </a>
+            <p><a href="PeaceTalisman.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>勁草不為風偃去<br>錢穆</h3>
+            <a href="StrongGrass.pdf" target="_blank">
+                <img src="images/StrongGrass.jpg" alt="書籍">
+            </a>
+            <p><a href="StrongGrass.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>浪濤中的消波石<br>張群</h3>
+            <a href="WaveAbsorbingStone.pdf" target="_blank">
+                <img src="images/WaveAbsorbingStone.jpg" alt="書籍">
+            </a>
+            <p><a href="WaveAbsorbingStone.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>士林珍美廟<br>陳威豪</h3>
+            <a href="ShilinZhenmeiTemple.pdf" target="_blank">
+                <img src="images/Shilin_beautiful.jpg" alt="書籍">
+            </a>
+            <p><a href="ShilinZhenmeiTemple.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+        <div class="item book-item">
+            <h3>漫遊中山北路五段<br>王紫寧</h3>
+            <a href="RoamingSection5ofZhongshanNorthRoad.pdf" target="_blank">
+                <img src="images/walking_in.jpg" alt="書籍">
+            </a>
+            <p><a href="RoamingSection5ofZhongshanNorthRoad.pdf" target="_blank">閱讀 PDF</a></p>
+        </div>
+    </div>
+    <a href="web.html" class="back-home">返回首頁</a>
+</body>
+
+</html>
